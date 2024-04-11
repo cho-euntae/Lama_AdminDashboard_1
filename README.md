@@ -39,4 +39,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
 ## https://github.com/safak/nextadmin.git
 ## npm i react-icons@4.11.0
+<<<<<<< HEAD
 ## => https://react-icons.github.io/react-icons/search
+=======
+## => https://react-icons.github.io/react-icons/search
+>>>>>>> 28b339bf45e264bb587762ccd42119ad66b29810
