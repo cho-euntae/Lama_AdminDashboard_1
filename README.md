@@ -35,9 +35,39 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
-## https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
-## https://github.com/safak/nextadmin.git
+## Cloen Coding
+
+## npm install list
 ## npm i react-icons@4.11.0
-## => https://react-icons.github.io/react-icons/search
-## => https://react-icons.github.io/react-icons/search
+## npm i recharts@2.9.0
+
+
+### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
+### https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
+### https://github.com/safak/nextadmin.git
+
+
+
+#### => https://react-icons.github.io/react-icons/search
+#### => https://react-icons.github.io/react-icons/search
+
+#### git add .
+#### git status 
+#### git commit -m "message"
+#### git push origin main
+
+###### 필요기능
+###### 1.개인별 진행실적 (CRUD)
+###### 2.개인별 주간실적 등록
+###### 3.프로젝트 통합관리 마스터 (CRUD)
+###### 4.프로젝트 디테일 관리 (데이터사업부 excel 참조 / zira 참조 https://choeuntae.atlassian.net/jira/core/projects/PM/summary)
+###### 5.실적 리포트 조회
+###### 6.사용자 관리
+###### 상태관리하는 테이블이 있어야됨. open ~ close까지
+###### 현재 진행상태를 보기 위한 화면이 필요함.
+###### 사용자가 어떤 버튼을 클릭했고 어떤 글을 작성했고 모든 행동을 저장함.
+###### 몇일동안 데이터를 가지고 있을지 궁금.. 데이터양이 많을것같음.
+###### 권한그룹관리가 필요하고, 개인사용자는 본인것만 보고, 관리자는 다 볼 수 있게
+
+
+

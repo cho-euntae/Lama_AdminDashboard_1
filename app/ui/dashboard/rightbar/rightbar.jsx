@@ -5,7 +5,7 @@ const Rightbar = () => {
         <div className={styles.container}>
             <div className={styles.item}>
                 <div className={styles.bgContainer}>
-
+                    Right Bar
                 </div>
             </div>
         </div>
