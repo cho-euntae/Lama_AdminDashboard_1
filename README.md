@@ -44,6 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
+### https://www.youtube.com/watch?v=cBg6xA5C60s 1:20:06초
 ### https://github.com/safak/nextadmin.git
 
 
