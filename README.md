@@ -1,3 +1,5 @@
+# Cloen Coding
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -35,7 +37,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Cloen Coding
+
 
 ## npm install list
 ## npm i react-icons@4.11.0
@@ -45,17 +47,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 1:20:06초
+### https://www.youtube.com/watch?v=cBg6xA5C60s 1:30:34초
 ### https://github.com/safak/nextadmin.git
 
 
 
-#### => https://react-icons.github.io/react-icons/search
 #### => https://react-icons.github.io/react-icons/search
 
 #### git add .
 #### git status 
 #### git commit -m "message"
 #### git push origin main
+
+#### git pull & git pull origin main
 
 ###### 필요기능
 ###### 1.개인별 진행실적 (CRUD)

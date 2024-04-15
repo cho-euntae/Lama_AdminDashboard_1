@@ -9,8 +9,9 @@ const ProductsPage = () => {
       <div className={styles.container}>
         <div className={styles.top}>
           <Search placeholder="Search for product..."/>
-          <Link href="/dashboard/products/add" />
+          <Link href="/dashboard/products/add">
           <button className={styles.addButton}>Add New</button>
+          </Link>
         </div>
 
         <table className={styles.table}>
