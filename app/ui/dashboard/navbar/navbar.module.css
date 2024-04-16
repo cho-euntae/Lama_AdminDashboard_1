@@ -30,14 +30,14 @@
 }
 
 .input {
-background-color: transparent;
-border: none;
-color: var(--text);
-outline: none;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    outline: none;
 }
 
 .icons{
     display: flex;
     gap: 20px;
-
+    padding: 10px;
 }
