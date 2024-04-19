@@ -42,6 +42,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## npm install list
 ## npm i react-icons@4.11.0
 ## npm i recharts@2.9.0
+## npm install react-base-table --save (리액트18 버전은 안됨. 업데이트된지 5년된 라이브러리)
+## npm i material-react-table (제일 잘되어있는 라이브러리 & 3주전에 업데이트도함 )
 
 
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
