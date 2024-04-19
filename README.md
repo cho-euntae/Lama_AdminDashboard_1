@@ -44,7 +44,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## npm i recharts@2.9.0
 ## npm install react-base-table --save (리액트18 버전은 안됨. 업데이트된지 5년된 라이브러리)
 ## npm i material-react-table (제일 잘되어있는 라이브러리 & 3주전에 업데이트도함 )
-
+# editor material 사용할려면 아래 라이브러리 추가해줘야됨
+## npm i @mui/material  / npm install @tanstack/react-query 
 
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
