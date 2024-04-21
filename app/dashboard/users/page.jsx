@@ -3,8 +3,15 @@ import styles from "@/app/ui/dashboard/users/users.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Pagenation from "@/app/ui/dashboard/pagination/pagination";
+// import {fetchUsers} from "@/app/lib/data";
+import { fetchUsers } from "@/app/lib/data";
 
-const UsersPage = () => {
+const UsersPage = async () => {
+
+  const users = await fetchUsers();
+
+  console.log(users);
+  
     return (
       <div className={styles.container}>
         <div className={styles.top}>
@@ -26,11 +33,12 @@ const UsersPage = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            {users.map((user)=>(
+              <tr key={user.id}>
               <td>
                 <div className={styles.user}>
                 <Image src="/noavatar.png" alt="" width={40} height={40} className={styles.userImage} />
-                John Doe
+                {user.username}
                 </div>
               </td>
               <td>john@gmail.com</td>
@@ -39,13 +47,15 @@ const UsersPage = () => {
               <td>active</td>
               <td>
                 <div className={styles.buttons}>
-                <Link href="/dashboard/users/1">
+                <Link href="/dashboard/users/test">
                   <button className={`${styles.button} ${styles.view}`}>View</button>
                 </Link>
                 <button className={`${styles.button} ${styles.delete}`}>Delete</button>
                 </div>
               </td>
             </tr>
+            
+          ))}
           </tbody>
         </table>
         <Pagenation />
