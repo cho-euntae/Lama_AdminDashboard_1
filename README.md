@@ -79,4 +79,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ###### 권한그룹관리가 필요하고, 개인사용자는 본인것만 보고, 관리자는 다 볼 수 있게
 
 
-
+# VSCode Debuging node.js !
