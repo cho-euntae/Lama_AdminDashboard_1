@@ -14,11 +14,12 @@ import { fetchUsers } from "@/app/lib/data";
 =/blog/my-post
 */}
 
-const UsersPage = async () => {
+const UsersPage = async ({searchParams}) => {
 
-  const users = await fetchUsers();
+  const q = searchParams?.q || "";
+  const users = await fetchUsers(q);
 
-  console.log(users);
+  // console.log(users);
 
   
     return (
@@ -46,14 +47,14 @@ const UsersPage = async () => {
               <tr key={user.id}>
               <td>
                 <div className={styles.user}>
-                <Image src="/noavatar.png" alt="" width={40} height={40} className={styles.userImage} />
+                <Image src={user.image || "/noavatar.png"} alt="" width={40} height={40} className={styles.userImage} />
                 {user.username}
                 </div>
               </td>
               <td>{user.email}</td>
-              <td>2022.01.13</td>
-              <td>{user.isAdmin == true ? 'true' : 'false'}</td>
-              <td>{user.isActive == true ? 'true' : 'false'}</td>
+              <td>{user.createdAt?.toString().slice(4,16)}</td>
+              <td>{user.isAdmin ? 'Admin' : 'Client'}</td>
+              <td>{user.isActive ? 'active' : 'passive'}</td>
               <td>
                 <div className={styles.buttons}>
                 {/* <Link href="/dashboard/users/test"> */}
