@@ -7,13 +7,19 @@ import Pagenation from "@/app/ui/dashboard/pagination/pagination";
 import { fetchUsers } from "@/app/lib/data";
 
 
+{/* 
+<Link href={{ pathname: "/about", query: { name: "test" } }}>About us</Link>
+= /about?name=test
+<Link href={{ pathname: "/blog/[slug]", query: { slug: "my-post" } }}>Blog Post</Link> 
+=/blog/my-post
+*/}
+
 const UsersPage = async () => {
 
   const users = await fetchUsers();
 
   console.log(users);
-  
-  console.log(users[0].isActive);
+
   
     return (
       <div className={styles.container}>
@@ -50,7 +56,8 @@ const UsersPage = async () => {
               <td>{user.isActive == true ? 'true' : 'false'}</td>
               <td>
                 <div className={styles.buttons}>
-                <Link href="/dashboard/users/test">
+                {/* <Link href="/dashboard/users/test"> */}
+                <Link href={`/dashboard/users/${user.id}`}>
                   <button className={`${styles.button} ${styles.view}`}>View</button>
                 </Link>
                 <button className={`${styles.button} ${styles.delete}`}>Delete</button>

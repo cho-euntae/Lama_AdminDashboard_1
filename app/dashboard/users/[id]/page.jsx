@@ -3,10 +3,11 @@
 import styles from "@/app/ui/dashboard/users/singleUser/singleUser.module.css";
 import Image from "next/image";
 
-const SingleUserPage = () => {
+const SingleUserPage = (params) => {
   
-//   const { id } = params;
+  const { id } = params;
 //   const user = await fetchUser(id);
+console.log(id);
 
   return (
     <div className={styles.container}>
