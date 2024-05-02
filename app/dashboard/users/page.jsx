@@ -6,11 +6,14 @@ import Pagenation from "@/app/ui/dashboard/pagination/pagination";
 // import {fetchUsers} from "@/app/lib/data";
 import { fetchUsers } from "@/app/lib/data";
 
+
 const UsersPage = async () => {
 
   const users = await fetchUsers();
 
   console.log(users);
+  
+  console.log(users[0].isActive);
   
     return (
       <div className={styles.container}>
@@ -41,10 +44,10 @@ const UsersPage = async () => {
                 {user.username}
                 </div>
               </td>
-              <td>john@gmail.com</td>
+              <td>{user.email}</td>
               <td>2022.01.13</td>
-              <td>Admin</td>
-              <td>active</td>
+              <td>{user.isAdmin == true ? 'true' : 'false'}</td>
+              <td>{user.isActive == true ? 'true' : 'false'}</td>
               <td>
                 <div className={styles.buttons}>
                 <Link href="/dashboard/users/test">
@@ -54,7 +57,6 @@ const UsersPage = async () => {
                 </div>
               </td>
             </tr>
-            
           ))}
           </tbody>
         </table>

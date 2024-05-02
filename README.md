@@ -78,5 +78,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ###### 몇일동안 데이터를 가지고 있을지 궁금.. 데이터양이 많을것같음.
 ###### 권한그룹관리가 필요하고, 개인사용자는 본인것만 보고, 관리자는 다 볼 수 있게
 
+# MongDB Atlas 유저권한을 줘야 DB 사용가능 / admin:admin
+
 
 # VSCode Debuging node.js !

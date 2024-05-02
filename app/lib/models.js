@@ -73,6 +73,6 @@ const productSchema = new mongoose.Schema(
   { timestamps: true }
 ); 
  
-export const User = mongoose.models.Userlist || mongoose.model("Userlist", userSchema);
+export const Users = mongoose.models.Users || mongoose.model("Users", userSchema);
 export const Product =
   mongoose.models.Products || mongoose.model("Products", productSchema);
