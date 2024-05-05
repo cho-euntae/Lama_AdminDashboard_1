@@ -74,5 +74,5 @@ const productSchema = new mongoose.Schema(
 ); 
  
 export const Users = mongoose.models.Users || mongoose.model("Users", userSchema);
-export const Product =
+export const Products =
   mongoose.models.Products || mongoose.model("Products", productSchema);

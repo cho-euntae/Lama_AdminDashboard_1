@@ -47,6 +47,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # editor material 사용할려면 아래 라이브러리 추가해줘야됨
 ## npm i @mui/material  / npm install @tanstack/react-query 
 
+## npm i use-debounce@9.0.4  // search에서 키입력이 없어질때 검색됨 
+## npm i bcrypt@5.1.1 // password 보안
+
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 1:20:06초
