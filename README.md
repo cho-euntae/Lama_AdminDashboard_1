@@ -48,6 +48,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## npm i @mui/material  / npm install @tanstack/react-query 
 
 ## npm i use-debounce@9.0.4  // search에서 키입력이 없어질때 검색됨 
+
+## https://www.npmjs.com/package/bcrypt
 ## npm i bcrypt@5.1.1 // password 보안
 
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초

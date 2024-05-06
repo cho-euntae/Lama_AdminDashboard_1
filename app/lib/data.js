@@ -24,8 +24,8 @@ export const fetchUsers = async (q,page) => {
 
 export const fetchProducts = async (q,page) => {
 
-    console.log(q);
-    console.log(page);
+    // console.log(q);
+    // console.log(page);
 
     // console.log("fetchUsers q1 = " + q);
     //https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/RegExp
@@ -45,4 +45,17 @@ export const fetchProducts = async (q,page) => {
         console.log(err)
         throw new Error("failed to fetch user!");
     }
+}
+
+export const selectProduct = async (id) => {
+    
+    try {
+        connectToDB();
+        const user = await Products.findOne(id)
+        return user;
+    }catch(err){
+        console.log(err);
+        throw new Error("failed to select product")
+;    }
+
 }

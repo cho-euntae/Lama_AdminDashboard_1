@@ -11,7 +11,7 @@ const Pagenation = ({count}) => {
     const page = searchParams.get("page") || 1;
 
     const params = new URLSearchParams(searchParams);
-    console.log("count = "+count);
+    // console.log("count = "+count);
     const ITEM_PER_PAGE = 3
 
     const hasPrev = ITEM_PER_PAGE * (parseInt(page)-1) > 0
