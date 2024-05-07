@@ -1,14 +1,19 @@
 // import { updateUser } from "@/app/lib/actions";
 // import { fetchUser } from "@/app/lib/data";
-import { selectProduct } from "@/app/lib/data";
+import { findByIdProduct } from "@/app/lib/data";
 import styles from "@/app/ui/dashboard/products/singleProducts/singleProducts.module.css";
 import Image from "next/image";
+// import { useLocation } from "next/navigation";
 
-const SingleProducts = async (params) => {
-  
-  const { id } = params;
-  const products = await selectProduct(id);
-  // console.log("products : "+products);
+const SingleProducts = async (props) => {
+
+  // console.log(params.id);
+  console.log(props.params.id);
+
+  const id  = props.params.id;
+  // const id = '6633275ba1beb3b016337622';
+  const products = await findByIdProduct(id);
+  console.log("products : "+products);
 
   return (
     <div className={styles.container}>

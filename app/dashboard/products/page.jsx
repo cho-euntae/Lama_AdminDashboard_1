@@ -34,7 +34,7 @@ const ProductsPage = async ({searchParams}) => {
           </thead>
           <tbody>
             {products.map(product=>(
-            <tr key={product.id}>
+            <tr key={product._id}>
               <td>
                 <div className={styles.product}>
                 {/* <Image src="/noproduct.jpg"  */}

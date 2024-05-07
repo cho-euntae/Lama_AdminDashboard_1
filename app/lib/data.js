@@ -47,11 +47,11 @@ export const fetchProducts = async (q,page) => {
     }
 }
 
-export const selectProduct = async (id) => {
+export const findByIdProduct = async (id) => {
     
     try {
         connectToDB();
-        const user = await Products.findOne(id)
+        const user = await Products.findById(id)
         return user;
     }catch(err){
         console.log(err);
