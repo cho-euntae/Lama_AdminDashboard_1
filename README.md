@@ -50,7 +50,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## npm i use-debounce@9.0.4  // search에서 키입력이 없어질때 검색됨 
 
 ## https://www.npmjs.com/package/bcrypt
-## npm i bcrypt@5.1.1 // password 보안
+## npm i bcrypt@5.1.1 // password 암호화
+
+## https://next-auth.js.org/getting-started/introduction
+## https://nextjs.org/learn/dashboard-app/adding-authentication 참조
+## npm install next-auth@5.0.0-beta.3 // 로그인 라이브러리
+
 
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 24:42초
 ### https://www.youtube.com/watch?v=cBg6xA5C60s 53:02초

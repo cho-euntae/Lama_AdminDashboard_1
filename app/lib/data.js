@@ -47,6 +47,19 @@ export const fetchProducts = async (q,page) => {
     }
 }
 
+export const findByIdUser = async (id) => {
+    console.log(id);
+    
+    try{
+        connectToDB();
+        const user = await Users.findById(id)
+        return user;
+    }catch(err){
+        console.log(err)
+        throw new Error("failed to fetch user!");
+    }
+};
+
 export const findByIdProduct = async (id) => {
     
     try {
@@ -59,3 +72,4 @@ export const findByIdProduct = async (id) => {
 ;    }
 
 }
+

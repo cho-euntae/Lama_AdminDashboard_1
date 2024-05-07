@@ -1,19 +1,18 @@
 // import { updateUser } from "@/app/lib/actions";
 // import { fetchUser } from "@/app/lib/data";
+import { updateProduct } from "@/app/lib/actions";
 import { findByIdProduct } from "@/app/lib/data";
 import styles from "@/app/ui/dashboard/products/singleProducts/singleProducts.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 // import { useLocation } from "next/navigation";
+
 
 const SingleProducts = async (props) => {
 
-  // console.log(params.id);
-  console.log(props.params.id);
-
   const id  = props.params.id;
-  // const id = '6633275ba1beb3b016337622';
-  const products = await findByIdProduct(id);
-  console.log("products : "+products);
+  const product = await findByIdProduct(id);
+
+  console.log(product);
 
   return (
     <div className={styles.container}>
@@ -24,28 +23,31 @@ const SingleProducts = async (props) => {
         {/* {username} */} 
       </div>
       <div className={styles.formContainer}>
-        <form action="" className={styles.form}>
-          <input type="hidden" name="id" value={products.id}/>
+        <form action={updateProduct} className={styles.form}>
+          <input type="hidden" name="id" value={product.id}/>
           <label>title</label>
-          <input type="text" name="title" placeholder="" value={products.title} />
+          <input type="text" name="title" placeholder="" value={product.title} />
           <label>price</label>
-          <input type="number" name="price" placeholder="" value={products.price}/>
+          <input type="number" name="price" placeholder="" value={product.price}/>
           <label>stock</label>
-          <input type="number" name="stock" value={products.stock} />
+          <input type="number" name="stock" value={product.stock} />
           <label>color</label>
-          <input type="text" name="color" placeholder="" value={products.color} />
+          <input type="text" name="color" placeholder="" value={product.color} />
           <label>desc</label>
-          <textarea type="text" name="desc" placeholder="" value={products.desc} />
+          <textarea type="text" name="desc" placeholder="" value={product.desc} />
           <label>category</label>
-          <select name="cat" id="cat">
-            {/* <option value={general}>Choose a Category</option>
+          <input type="text" name="cat" value={product.cat} />
+          {/* <select name="cat" id="cat" defaultValue={product.cat}>
+            <option value="kitchen">kitchen</option>
+            <option value="phone">phone</option>
+            <option value="computer">computer</option>
+          </select> */}
+          {/* <select name="cat" id="cat" defaultValue={product.cat}>
             <option value="kitchen">Kitchen</option>
             <option value="phone">Phone</option>
             <option value="computer">Computer</option>
-            <option value={true} >Yes</option>
-            <option value={false} >No</option> */}
-          </select>
-          <button>Update</button>
+          </select> */}
+          <button >Update</button>
         </form>
       </div>
     </div>
