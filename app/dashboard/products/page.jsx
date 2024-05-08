@@ -38,8 +38,8 @@ const ProductsPage = async ({searchParams}) => {
               <td>
                 <div className={styles.product}>
                 {/* <Image src="/noproduct.jpg"  */}
-                {/* <Image src={`${user.img} || /noavatar.png`} alt="" fill /> */}
-                <Image src={`${product.img} || /noproduct.jpg`}
+                {/* <Image src={product.img || "/noavatar.png"} alt="" fill /> */}
+                <Image src={product.img || "/noproduct.jpg"}
                 alt="" width={40} height={40} className={styles.productImage} />
                 {product.title}
                 </div>
