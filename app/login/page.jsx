@@ -6,6 +6,7 @@ const Login = () => {
       <div className={styles.container}>
         
         <form action={authenticate} className={styles.form}>
+        {/* <form action="/" className={styles.form}> */}
         <h1>Login</h1>
           <input type="text" placeholder="username" name="username" />
           <input type="password" placeholder="password" name="password" />

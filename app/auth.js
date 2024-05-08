@@ -23,8 +23,8 @@ const login = async (credentials) => {
 }
 
 
-// export const {signIn, signOut, auth } = NextAuth({
-export const { auth, signIn, signOut } = NextAuth({
+export const {signIn, signOut, auth } = NextAuth({
+// export const { auth, signIn, signOut } = NextAuth({
     ...authConfig,
     providers: [
         CredentialsProvider({
